@@ -105,7 +105,7 @@ h4 { margin: 28px 0 10px; font-size: 0.95rem; text-transform: uppercase; letter-
 .hero-inner { position: relative; padding-top: 90px; padding-bottom: 90px; pointer-events: none; }
 .hero-inner a, .hero-inner button { pointer-events: auto; }
 .eyebrow { color: var(--muted); letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.8rem; margin: 0 0 14px; }
-.name { font-size: clamp(3.4rem, 13vw, 9.5rem); font-weight: 800; letter-spacing: -0.045em; line-height: 0.92; background: linear-gradient(100deg, var(--text) 10%, var(--a) 45%, var(--g) 75%, var(--text) 100%); background-size: 220% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shine 9s ease-in-out infinite alternate; }
+.name { font-size: clamp(2.5rem, 14.6vw, 11rem); white-space: nowrap; font-weight: 800; letter-spacing: -0.045em; line-height: 1.08; padding-bottom: 0.04em; background: linear-gradient(100deg, var(--text) 10%, var(--a) 45%, var(--g) 75%, var(--text) 100%); background-size: 220% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shine 9s ease-in-out infinite alternate; }
 @keyframes shine { from { background-position: 0% 0; } to { background-position: 100% 0; } }
 .scroll-cue { position: absolute; left: 50%; bottom: 26px; width: 26px; height: 42px; margin-left: -13px; border: 2px solid var(--muted); border-radius: 14px; opacity: 0.7; }
 .scroll-cue span { position: absolute; left: 50%; top: 8px; width: 4px; height: 8px; margin-left: -2px; border-radius: 2px; background: var(--text); animation: cue 1.8s ease-in-out infinite; }
@@ -265,3 +265,6 @@ main:focus { outline: none; }
 .role-slot { display: block; position: relative; min-height: 1.5em; margin-top: 4px; }
 .role-word { display: block; color: var(--text); font-weight: 600; line-height: 1.5; }
 @media (max-width: 900px) { .role-slot { min-height: 3em; } }
+
+/* Hero uses a wider column than the rest of the page so the one-line name can be big on large screens. */
+.wrap.hero-inner { max-width: 1240px; }
