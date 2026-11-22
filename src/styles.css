@@ -107,9 +107,6 @@ h4 { margin: 28px 0 10px; font-size: 0.95rem; text-transform: uppercase; letter-
 .eyebrow { color: var(--muted); letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.8rem; margin: 0 0 14px; }
 .name { font-size: clamp(3.4rem, 13vw, 9.5rem); font-weight: 800; letter-spacing: -0.045em; line-height: 0.92; background: linear-gradient(100deg, var(--text) 10%, var(--a) 45%, var(--g) 75%, var(--text) 100%); background-size: 220% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shine 9s ease-in-out infinite alternate; }
 @keyframes shine { from { background-position: 0% 0; } to { background-position: 100% 0; } }
-.role { font-size: clamp(1.05rem, 2.4vw, 1.5rem); margin: 26px 0 30px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0 0.4em; min-height: 2.6em; align-items: baseline; }
-.role-slot { display: inline-block; min-width: 15em; }
-.role-word { display: inline-block; color: var(--text); font-weight: 600; }
 .scroll-cue { position: absolute; left: 50%; bottom: 26px; width: 26px; height: 42px; margin-left: -13px; border: 2px solid var(--muted); border-radius: 14px; opacity: 0.7; }
 .scroll-cue span { position: absolute; left: 50%; top: 8px; width: 4px; height: 8px; margin-left: -2px; border-radius: 2px; background: var(--text); animation: cue 1.8s ease-in-out infinite; }
 @keyframes cue { 0% { transform: translateY(0); opacity: 1; } 70% { transform: translateY(14px); opacity: 0; } 100% { opacity: 0; } }
@@ -157,7 +154,6 @@ h4 { margin: 28px 0 10px; font-size: 0.95rem; text-transform: uppercase; letter-
 @media (max-width: 860px) {
   .pcard { grid-template-columns: 1fr; min-height: 0; }
   .stack-slot { position: relative; top: 0 !important; }
-  .role-slot { min-width: 0; }
 }
 
 /* ---------- phones ---------- */
@@ -176,7 +172,6 @@ h4 { margin: 28px 0 10px; font-size: 0.95rem; text-transform: uppercase; letter-
   .cap { min-height: 96px; }
   .panel { padding: 18px; }
   .dive { padding: 16px; }
-  .role { min-height: 3.6em; }
 }
 
 /* ---------- architecture viewer ---------- */
@@ -242,9 +237,8 @@ h4 { margin: 28px 0 10px; font-size: 0.95rem; text-transform: uppercase; letter-
   .lab-slider { grid-template-columns: 1fr; gap: 4px; }
 }
 
-.intro { max-width: 34em; margin: -8px 0 30px; font-size: clamp(1rem, 1.9vw, 1.2rem); color: var(--muted); line-height: 1.55; }
+.intro { max-width: 34em; margin: 10px 0 30px; font-size: clamp(1rem, 1.9vw, 1.2rem); color: var(--muted); line-height: 1.55; }
 .iw { display: inline-block; margin-right: 0.28em; }
-.role { margin-bottom: 18px; }
 
 .intro, .role { text-shadow: 0 1px 14px var(--bg); }
 
@@ -264,3 +258,10 @@ main:focus { outline: none; }
   :root:not([data-theme='dark']) .skip,
   :root:not([data-theme='dark']) .flow li::before { color: #fff; }
 }
+
+/* Role line: static text on its own line, rotating phrase in a slot with reserved height, so nothing below it moves. */
+.role { display: block; margin: 26px 0 18px; font-size: clamp(1.05rem, 2.4vw, 1.5rem); color: var(--muted); }
+.role-pre { display: block; }
+.role-slot { display: block; position: relative; min-height: 1.5em; margin-top: 4px; }
+.role-word { display: block; color: var(--text); font-weight: 600; line-height: 1.5; }
+@media (max-width: 900px) { .role-slot { min-height: 3em; } }

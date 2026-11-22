@@ -10,17 +10,3 @@ a retrieval-augmented chatbot on Azure Databricks, adapter-based fine-tuning (Lo
 Show, Attend and Tell image captioning, and architecture write-ups of production ML systems.
 
 - LinkedIn: https://www.linkedin.com/in/ayush-patel-ml/
-- Kaggle: https://www.kaggle.com/ayusha232
-
-## About this repo
-
-This repo is the source of the portfolio site: React and Vite, deployed to GitHub Pages by the workflow in
-`.github/workflows/deploy.yml`.
-
-```bash
-npm install
-npm run dev      # local preview
-npm run build    # production build into dist/
-```
-
-Employer projects are described at architecture level only. No employer code, data or screenshots are included.

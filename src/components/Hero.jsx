@@ -94,7 +94,7 @@ function RotatingRole() {
   }, [])
   return (
     <p className="role" aria-live="off">
-      <span className="role-pre">Machine Learning Engineer who </span>
+      <span className="role-pre">Machine Learning Engineer who</span>
       <span className="role-slot">
         <AnimatePresence mode="wait">
           <motion.span key={i} className="role-word" initial={{ y: 22, opacity: 0, filter: 'blur(6px)' }} animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }} exit={{ y: -22, opacity: 0, filter: 'blur(6px)' }} transition={{ duration: 0.35 }}>
