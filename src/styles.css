@@ -259,12 +259,17 @@ main:focus { outline: none; }
   :root:not([data-theme='dark']) .flow li::before { color: #fff; }
 }
 
-/* Role line: static text on its own line, rotating phrase in a slot with reserved height, so nothing below it moves. */
-.role { display: block; margin: 26px 0 18px; font-size: clamp(1.05rem, 2.4vw, 1.5rem); color: var(--muted); }
-.role-pre { display: block; }
-.role-slot { display: block; position: relative; min-height: 1.5em; margin-top: 4px; }
+/* Role line: one line at every width. The font scales so the longest phrase always fits;
+   small phones say "ML Engineer who" and wider screens the full title. The prefix never moves. */
+.role { display: flex; align-items: baseline; flex-wrap: nowrap; white-space: nowrap; gap: 0 0.32em; margin: 26px 0 18px; color: var(--muted); font-size: clamp(0.8rem, calc((100vw - 28px) / 22), 1.5rem); }
+.role-pre { flex: none; }
+.rp-long { display: none; }
+.role-slot { display: block; position: relative; min-height: 1.5em; }
 .role-word { display: block; color: var(--text); font-weight: 600; line-height: 1.5; }
-@media (max-width: 900px) { .role-slot { min-height: 3em; } }
+@media (min-width: 560px) {
+  .role { font-size: clamp(0.8rem, calc((100vw - 40px) / 30.5), 1.5rem); }
+  .rp-long { display: inline; } .rp-short { display: none; }
+}
 
 /* Hero uses a wider column than the rest of the page so the one-line name can be big on large screens. */
-.wrap.hero-inner { max-width: 1240px; }
+.wrap.hero-inner { width: 100%; max-width: 1240px; } /* fixed width: a grid item with auto margins otherwise shrink-wraps its content and shifts as text changes */

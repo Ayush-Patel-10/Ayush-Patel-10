@@ -78,11 +78,11 @@ function Particles() {
 }
 
 const roles = [
-  'ships document AI to production',
+  'ships document AI',
   'builds MLOps platforms',
-  'designs pricing and decisioning models',
+  'designs pricing models',
   'evaluates LLM systems',
-  'monitors models so they stay right',
+  'monitors model drift',
 ]
 
 function RotatingRole() {
@@ -94,7 +94,7 @@ function RotatingRole() {
   }, [])
   return (
     <p className="role" aria-live="off">
-      <span className="role-pre">Machine Learning Engineer who</span>
+      <span className="role-pre"><span className="rp-long">Machine Learning Engineer</span><span className="rp-short">ML Engineer</span> who</span>
       <span className="role-slot">
         <AnimatePresence mode="wait">
           <motion.span key={i} className="role-word" initial={{ y: 22, opacity: 0, filter: 'blur(6px)' }} animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }} exit={{ y: -22, opacity: 0, filter: 'blur(6px)' }} transition={{ duration: 0.35 }}>
