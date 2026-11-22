@@ -1,25 +1,26 @@
-<h1>Hi there, I'm Ayush Patel 👋</h1> 
+# Hi, I'm Ayush Patel 👋
 
-[![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-patel-ml/) [![](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)](https://www.kaggle.com/ayusha232)
+I'm a machine learning engineer. I like the half of ML that decides whether a model keeps working once it ships:
+evaluation, monitoring and guardrails.
 
-I'm passionate about **Machine Learning** and **Data Science**. With the development of **technology**, I believe that there is a huge potential for **Artificial Intelligence** in different domains. The rapid rate at which there is advancement in **computing power** and the freedom to take a **large amount of data** really pushes the field of **Data Science** and **Machine Learning** to a whole new level.
+**Portfolio: https://ayush-patel-10.github.io/Ayush-Patel-10/**
 
-<h2> 👨‍🎓 About Me 💼: </h2>
+Each project there plays through how it works, step by step, and has its own page:
+a retrieval-augmented chatbot on Azure Databricks, adapter-based fine-tuning (LoRA / QLoRA) in LitArt,
+Show, Attend and Tell image captioning, and architecture write-ups of production ML systems.
 
-I'm a Grad student at **Northeastern University Khoury College of Computer Sciences** pursuing **MS in Data Science**. Proficient in predictive modeling, data processing, and data mining algorithms, as well as scripting languages, including Python and R. Capable of creating, developing, testing, and deploying highly adaptive diverse services to translate business and functional qualifications into substantial deliverables. This portfolio is created to demonstrate a wide range of skills that I possess in solving and tackling machine learning problems. Thanks.🙂
+- LinkedIn: https://www.linkedin.com/in/ayush-patel-ml/
+- Kaggle: https://www.kaggle.com/ayusha232
 
-![](https://github.com/suhasmaddali/Images/blob/main/martin-shreder-5Xwaj9gaR0g-unsplash.jpg)
+## About this repo
 
-<h2> My Skills 😀:</h2>
+This repo is the source of the portfolio site: React and Vite, deployed to GitHub Pages by the workflow in
+`.github/workflows/deploy.yml`.
 
-I learned to code from a young age. I learned **"C"** language and now I'm learning **python** which gives me an edge for understanding machine learning and data science. As a result, I was able to learn and understand the code well. Later, I also learned various other programming languages such as **"R"** which were important in order to become a **machine learning engineer** or a **data scientist**. Below are the list of some of my skills that I've gained throughout my experience of working with data science and machine learning. Learning these important **tools** and **techniques** helped me build **machine learning projects** and understand their working in full detail. Feel free to take a look.
+```bash
+npm install
+npm run dev      # local preview
+npm run build    # production build into dist/
+```
 
-[![](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen)](https://www.python.org) [![](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=white)](https://www.tensorflow.org) [![](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/) [![](https://img.shields.io/badge/SciPy-654FF0?style=for-the-badge&logo=SciPy&logoColor=white)](https://www.scipy.org) [![](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org) [![](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org) [![](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com) [![](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white)](https://pytorch.org) [<img src = "https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>](https://www.mongodb.com/) [![](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)](https://www.r-project.org) [![](https://img.shields.io/badge/Scala-DC322F?style=for-the-badge&logo=scala&logoColor=white)](https://www.scala-lang.org)  [![](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)](https://www.json.org/json-en.html) [![](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)](https://www.tableau.com) [![](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://www.cprogramming.com) [![](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white)](https://keras.io) [![](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com) [![](https://img.shields.io/badge/conda-342B029.svg?&style=for-the-badge&logo=anaconda&logoColor=white)](https://www.anaconda.com) [![](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=Power%20BI&logoColor=white)](https://powerbi.microsoft.com/en-us/) [![](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)](https://colab.research.google.com) [<img src = "https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" width = "100" height = "27.5"/>](https://www.sqlite.org/index.html)[![](https://img.shields.io/badge/LaTeX-47A141?style=for-the-badge&logo=LaTeX&logoColor=white)](https://www.latex-project.org) [![](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/en/) [![](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://www.microsoft.com/en-us/microsoft-365/excel) [![](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)](https://www.microsoft.com/en-us/microsoft-365/powerpoint) [![](https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white)](https://www.office.com)
-
-## 🎬 My GitHub Summary:
-
-Feel free to take a look at my **GitHub** overview. This gives a good understanding of the **languages** used along with the total commits. By taking a look at this summary, it is handy to get to get a brief overview of the entire **portfolio**. Thanks.
-
-## 💼 My Portfolio Overview:
-
-I had an amazing experience doing **machine learning** and **deep learning** projects. Below are the links to my projects. If you want more information about the projects, feel free to scroll to the end of this website where I describe in great detail the **projects** and the **results** obtained. Below is a **summary** of the entire portfolio. Feel free to take a look. Thanks!
+Employer projects are described at architecture level only. No employer code, data or screenshots are included.
