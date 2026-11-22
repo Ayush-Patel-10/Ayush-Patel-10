@@ -273,3 +273,12 @@ main:focus { outline: none; }
 
 /* Hero uses a wider column than the rest of the page so the one-line name can be big on large screens. */
 .wrap.hero-inner { width: 100%; max-width: 1240px; } /* fixed width: a grid item with auto margins otherwise shrink-wraps its content and shifts as text changes */
+
+/* ---------- centred hero ---------- */
+.hero-inner { text-align: center; }
+.role { justify-content: center; }
+.role-slot { display: grid; text-align: left; }
+.role-slot > * { grid-area: 1 / 1; }
+.role-ghost { visibility: hidden; font-weight: 600; line-height: 1.5; pointer-events: none; }
+.intro { margin-left: auto; margin-right: auto; }
+.hero .cta { justify-content: center; }
